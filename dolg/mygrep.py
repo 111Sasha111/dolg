@@ -2,7 +2,6 @@
 
 import sys
 import re
-import os
 
 def parse_args():
     args = sys.argv[1:]
@@ -110,3 +109,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
