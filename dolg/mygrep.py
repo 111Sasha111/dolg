@@ -7,12 +7,12 @@ import os
 def parse_args():
     args = sys.argv[1:]
     options = {
-        'i': False,
-        'v': False,
-        'c': False,
-        'l': False,
-        'n': False,
-        'e': None
+        'i': False, # игнор регистра
+        'v': False, # вывод строк, которые НЕ совпадают
+        'c': False, # вывод только количество совпадений
+        'l': False, # вывод только имен файлов с совпадениями
+        'n': False, # вывод номера строк
+        'e': None   # задать шаблон
     }
     template = None
     files = []
@@ -108,4 +108,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
